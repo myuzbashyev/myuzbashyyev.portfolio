@@ -10,7 +10,7 @@
         {{ $t("techStack.paragraph") }}
       </p>
       <ul
-        class="flex flex-wrap gap-10 xl:grid xl:grid-cols-7 xl:gap-x-32 xl:gap-y-20"
+        class="flex flex-wrap justify-center gap-10 md:justify-normal xl:grid xl:grid-cols-7 xl:gap-x-32 xl:gap-y-20"
         data-aos="fade-up"
       >
         <li v-for="icon in devIcons">

@@ -1,10 +1,10 @@
 <template>
   <section
     id="home"
-    class="pt-28 h-screen flex flex-col text-center items-center justify-around md:justify-between md:flex-row md:text-left"
+    class="h-screen flex flex-col text-center md:justify-between md:flex-row md:text-left"
   >
     <h1
-      class="text-4xl lg:text-5xl xl:text-6xl text-black dark:text-home-dark font-bold"
+      class="flex-1 text-4xl lg:text-5xl xl:text-6xl text-black dark:text-home-dark font-bold"
       data-aos="fade-right"
     >
       {{ $t("home.home-heading.h_1") }}
