@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class=" pt-16 h-screen flex flex-col  items-center justify-around md:justify-between md:flex-row md:text-left"
+    class="pt-16 flex flex-col  items-center md:justify-between md:flex-row md:text-left xl:h-screen"
   >
     <h1
       class="text-center  text-4xl lg:text-5xl xl:text-6xl xl:text-left text-black dark:text-home-dark font-bold"
