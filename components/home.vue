@@ -11,7 +11,8 @@
       <u
         class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text"
         >{{ $t("header.header-logo") }}</u
-      >{{ $t("home.home-heading.h_2") }}
+      >
+      {{ $t("home.home-heading.h_2") }}
     </h1>
 
     <img
