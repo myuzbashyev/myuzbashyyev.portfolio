@@ -1,10 +1,10 @@
 <template>
   <section
     id="home"
-    class="h-screen flex flex-col text-center md:justify-between md:flex-row md:text-left"
+    class=" pt-16 h-screen flex flex-col  items-center justify-around md:justify-between md:flex-row md:text-left"
   >
     <h1
-      class="flex-1 text-4xl lg:text-5xl xl:text-6xl text-black dark:text-home-dark font-bold"
+      class="text-center  text-4xl lg:text-5xl xl:text-6xl xl:text-left text-black dark:text-home-dark font-bold"
       data-aos="fade-right"
     >
       {{ $t("home.home-heading.h_1") }}
@@ -18,7 +18,7 @@
     <img
       src="@/assets/img/home-illust.png"
       alt="Developer illustration"
-      class="w-full min-w-[300px] max-w-[500px] drop-shadow-3xl"
+      class="w-full  min-w-[300px] max-w-[500px] drop-shadow-3xl"
       data-aos="fade-left"
     />
   </section>

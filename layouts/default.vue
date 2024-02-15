@@ -1,6 +1,6 @@
 <template>
   <header
-    class="px-5 py-10 flex justify-end sticky top-0 bg-white dark:bg-bg-dark z-10 font-dm-sans xl:max-w-7xl xl:px-0 xl:mx-auto xl:block xl:justify-normal"
+    class="px-5 py-3 flex justify-end sticky top-0 bg-white dark:bg-bg-dark z-10 font-dm-sans xl:max-w-7xl 2xl:px-0 xl:mx-auto xl:block xl:justify-normal"
   >
     <div
       class="fixed top-0 bottom-0 left-0 right-0 h-screen bg-black/30 dark:bg-white/30 opacity-0 invisible transition-opacity duration-500 xl:static xl:bg-inherit xl:h-auto xl:opacity-100 xl:visible"

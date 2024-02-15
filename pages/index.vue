@@ -1,7 +1,7 @@
 <template>
   <!-- Header -->
   <nuxt-layout>
-    <main class="max-w-3xl px-5 mx-auto md:max-w-7xl xl:px-0">
+    <main class="max-w-3xl px-5 mx-auto md:max-w-7xl 2xl:px-0">
       <!-- Home Section -->
       <home />
       <!-- About section -->
