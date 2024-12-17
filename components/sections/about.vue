@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="flex items-center pt-28">
+  <section id="about" class="section-container pt-28">
     <ul class="md:w-1/2" data-aos="fade-right">
       <li class="mb-10">
         <h1

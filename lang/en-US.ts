@@ -44,17 +44,19 @@ export default {
     paragraph: "Thins I've built so far",
     cards: {
       card_1:
-        "Welcome to Poem.tv, the web app designed to showcase the artistry of poet Kerim Hally. Delve into a world of literary brilliance, where poignant verses and captivating narratives take center stage. Poem.tv offers a captivating experience, celebrating the power of language and evoking profound emotions through the art of poetry, guided by the eloquence of Kerim Hally's work",
+        "Developed a modern website showcasing the Kerim Hally's poetry. The project utilizes advanced technologies: Vue.js,TailwindCSS, and Vuex. Interactive elements and dynamic effects provide an engaging experience for the reader.",
       card_2:
-        "Introducing PURSAT.TV: A dynamic web app providing access to a wide array of TV channels. With a seamless user experience and comprehensive channel selection, users can indulge in a rich and diverse entertainment experience. Navigate through an array of content and enjoy a personalized TV viewing journey, all within the immersive environment of PURSAT.TV.",
+        "A modern web platform for TV broadcasting management, built on Vue.js architecture and state management with Vuex. CSS provides a stylish and responsive interface, ensuring usability across various devices.",
       card_3:
-        "Experience a world of flavors with our recipes application. Explore a diverse culinary library, spanning global cuisines and dietary preferences. From quick bites to extravagant meals, unleash your inner chef and savor a symphony of tastes at your fingertips. Elevate your cooking journey with our comprehensive recipe app",
+        "An interactive web application for food enthusiasts, built with HTML, CSS, and JavaScript. Easily find new recipes and create your own cookbook.",
       card_4:
-        "Elevate your style with our men’s classic clothing shop. From timeless suits to refined casual wear, we offer a curated collection to elevate your wardrobe. Discover sophistication, quality, and versatility in every garment. Uncover the epitome of timeless style and impeccable craftsmanship, tailored for the modern gentleman.",
+        "HTML, CSS, and JavaScript-powered online store offers a wide range of stylish men's fashion. Easy search, size and color filtering, and secure payment make shopping convenient.",
       card_5:
-        "Delivering accessible and reliable healthcare solutions, our online pharmacy offers a diverse range of medications and wellness products. With a commitment to convenience and quality, we aim to provide seamless access to essential healthcare resources for individuals and families. Explore our platform, where health and convenience intersect.",
+        "Compare medicine prices quickly and easily. Online pharmacy, built with Pinia, Nuxt.js,Tailwind CSS and PrimeVue allows you to find the medications you need in just a few clicks. REST API ensures data accuracy.",
       card_6:
-        "Natours provides a user-friendly interface with stunning visuals of destinations, detailed tour descriptions, interactive maps, and easy booking options. The website highlights sustainable and responsible travel practices, promoting eco-tourism and conservation efforts to preserve the environment and support local communities.",
+        "A stylish and user-friendly website for travel enthusiasts, built with HTML, CSS, and JavaScript. Find inspiration for your next adventure and book your tour in just a few clicks.",
+      card_7:
+        "An eco-conscious website for a motor oil company built with Nuxt.js, Tailwind CSS, Pinia, and PrimeVue. It showcases sustainable products with responsive design, multilingual support, and engaging interactive features.",
     },
     link: "Live preview",
   },

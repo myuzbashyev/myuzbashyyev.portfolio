@@ -43,17 +43,19 @@ export default {
     paragraph: "Şu wagta çenli guran proýektlarym",
     cards: {
       card_1:
-        "Şahyr Kerim Hallynyň çeperçiligini görkezmek üçin döredilen web programmasy Poem.tv-e hoş geldiňiz. Edebi ajaýyplyk dünýäsine göz aýlaň, bu ýerde täsirli aýatlar we özüne çekiji hekaýalar esasy orny eýeleýär. Poem.tv, diliň güýjüni belläp, Kerim Hallynyň eserleriniň sözleýişine esaslanýan poeziýa sungaty arkaly çuňňur duýgulary döredýän özüne çekiji tejribe hödürleýär.",
+        "Kerim Hally şahyryň goşgularyny görkezýän häzirki zamanyň web saýty işlenip düzüldi. Proekt döretmek üçin täze tehnologiýalar: Vue.js, TailwindCSS we Vuex ulanyldy. Interaktiw elementler we dinamik täsirler okyjylaryň şygyrlaryň dünýäsine gyzykly batyp gitmegini üpjün edýär.",
       card_2:
-        "PURSAT.TV bilen tanyşdyrmak: Köp sanly teleýaýlymlara girmegi üpjün edýän dinamiki web programmasy. Ulanyjylaryň bökdençsiz tejribesi we giňişleýin kanal saýlamasy bilen, ulanyjylar baý we dürli güýmenje tejribesine baş goşup bilerler. Mazmunyň köpüsine göz aýlaň we PURSAT.TV-iň çuňňur gurşawynda şahsy telewizor görmek syýahatyndan lezzet alyň.",
+        "Телеwizion ýaýlymyny dolandyrmak üçin häzirki zaman web platformasy, Vue.js arhitekturasynda gurlup, ýagdaýy Vuex bilen dolandyrylýar. CSS dürli enjamlarda ulanyşyň amatlylygyny üpjün edýän, stilli we reaksiýa görkezýän interfeýsi üpjün edýär.",
       card_3:
-        "Reseptlerimiz bilen tagam dünýäsini başdan geçiriň. Global aşhanalary we iýmitleniş aýratynlyklaryny öz içine alýan dürli aşhana kitaphanasyny öwreniň. Çalt dişlemekden başlap, isripsiz naharlara çenli iç aşpeziňizi çykaryň we barmaklaryňyzyň ujundaky tagamlaryň simfoniýasyny dadyň. Giňişleýin resept programmasy bilen nahar bişirmek syýahatyňyzy ýokarlandyryň",
+        "Tagam söýüjiler üçin HTML, CSS we JavaScript arkaly döredilen interaktiw web-programma. Täze reseptleri aňsatlyk bilen tapyp, öz aşhana kitabyňy dörediň.",
       card_4:
-        "Erkeklerimiziň nusgawy eşik dükany bilen öz stiliňizi ýokarlandyryň. Wagtlaýyn kostýumlardan tä arassalanan tötänleýin eşiklere çenli, şkafyňyzy ýokarlandyrmak üçin egri kolleksiýa hödürleýäris. Her eşigiň çylşyrymlylygyny, hilini we köp taraplydygyny öwreniň. Döwrebap jenap üçin taýýarlanan wagtlaýyn stiliň we ajaýyp ussatlygyň nusgasyny açyň.",
+        "HTML, CSS we JavaScript esasynda döredilen erkek geýimleri üçin internet magazynymyz dürli görnüşli ajaýyp modellere baýdyr. Amatly gözleg, ölçeg we reňk boýunça sazlamak, şeýle hem howpsuz töleg siziň satyn alyşlaryňyzy rahatlyk bilen ýerine ýetirer.",
       card_5:
-        "Elýeterli we ygtybarly saglygy goraýyş çözgütlerini hödürläp, onlaýn dermanhanamyz dürli dermanlary we saglyk önümlerini hödürleýär. Amatlylyga we hiline ygrarly bolmak bilen, şahsyýetler we maşgalalar üçin möhüm saglygy goraýyş çeşmelerine bökdençsiz elýeterliligi üpjün etmegi maksat edinýäris. Saglyk we amatlylyk kesişýän platformamyzy öwreniň.",
+        "Dermanlaryň bahasyny çalt we amatly deňeşdiriň. Pinia, Nuxt.js, Tailwind CSS we PrimeVue esasynda döredilen onlaýn dermanhana siziň gerekli dermanlaryňyzy bir gözlegde tapmaga mümkinçilik berýär. REST API maglumatlaryň häzirki zamanlylygyny kepillendirýär.",
       card_6:
-        "“Natours” ulanyjylara amatly ýerleriň ajaýyp wizual görnüşleri, jikme-jik syýahat beýany, interaktiw kartalar we bron etmegiň aňsat görnüşleri bilen üpjün edýär. Sahypa, daşky gurşawy goramak we ýerli jemgyýetleri goldamak üçin eko-syýahatçylygy we tebigaty goramak tagallalaryny öňe sürüp, durnukly we jogapkärli syýahat tejribesini görkezýär.",
+        "Syýahat söýüjiler üçin stilli we rahat web saýty, HTML, CSS we JavaScript arkaly döredilen. Nobatky täze dynç alyşyňyz üçin ylham alyň we bir gezekde syýahatyňyzy belläň.",
+      card_7:
+        "Hereketlendiriji ýag öndürijisi üçin eko-temada web saýt Nuxt.js, Tailwind CSS, Pinia we PrimeVue arkaly döredildi. Ol kepilli önümleri häzirki zaman dizaýn bilen gabat getirip, köpugurly hyzmat we gyzykly interaktiw funksiýalar bilen görkezýär.",
     },
     link: "Syn üçin",
   },

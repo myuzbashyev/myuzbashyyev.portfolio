@@ -6,7 +6,6 @@
 @import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 /* Style */
-
 .body-light {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -14,4 +13,39 @@
 .body-dark {
   background-color: #191919;
   font-family: "Poppins", sans-serif;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+  @layer components {
+    /* *************************************************************************
+        General
+        ****************************************************************************/
+    .section-container {
+      @apply container mx-auto px-3;
+    }
+    .anime {
+      @apply transition-all duration-[.3s] ease-in-out;
+    }
+    .p-button {
+      z-index: 5 !important;
+      background-color: var(--primary-green) !important;
+      border: inherit !important;
+      border-radius: 8px !important;
+      color: var(--white) !important;
+      -webkit-border-radius: 8px !important;
+      -moz-border-radius: 8px !important;
+      -ms-border-radius: 8px !important;
+      -o-border-radius: 8px !important;
+    }
+    .p-button:hover {
+      background-color: var(--accent-green) !important;
+      transition: all 0.3s ease-in-out !important ;
+      -webkit-transition: all 0.3s ease-in-out !important ;
+      -moz-transition: all 0.3s ease-in-out !important ;
+      -ms-transition: all 0.3s ease-in-out !important ;
+      -o-transition: all 0.3s ease-in-out !important ;
+    }
+  }
 }

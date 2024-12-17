@@ -1,12 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from "@primevue/themes/aura";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@/assets/main.css"],
-  modules: ["@nuxtjs/tailwindcss", "nuxt-primevue", "nuxt-aos", "@nuxtjs/i18n"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@primevue/nuxt-module",
+    "nuxt-aos",
+    "@nuxtjs/i18n",
+  ],
+
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+        options: {
+          darkModeSelector: ".dark",
+        },
+      },
+    },
+  },
 
   tailwindcss: {
     configPath: "~/tailwind.config.js",
   },
+
   aos: {
     disable: false,
     startEvent: "DOMContentLoaded",
@@ -42,7 +60,9 @@ export default defineNuxtConfig({
       },
     ],
     lazy: true,
-    langDir: "./lang",
+    langDir: "../lang",
     defaultLocale: "ru",
   },
+
+  compatibilityDate: "2024-12-06",
 });

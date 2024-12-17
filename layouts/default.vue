@@ -1,98 +1,59 @@
 <template>
   <header
-    class="px-5 py-3 flex justify-end sticky top-0 bg-white dark:bg-bg-dark z-10 font-dm-sans xl:max-w-7xl 2xl:px-0 xl:mx-auto xl:block xl:justify-normal"
+    class="flex justify-end xl:block bg-white dark:bg-bg-dark z-10 section-container p-3 xl:py-3 sticky top-0"
   >
-    <div
-      class="fixed top-0 bottom-0 left-0 right-0 h-screen bg-black/30 dark:bg-white/30 opacity-0 invisible transition-opacity duration-500 xl:static xl:bg-inherit xl:h-auto xl:opacity-100 xl:visible"
-      :class="{ 'opacity-100 !visible': isSidebarOpened }"
-    >
-      <div
-        class="bg-white dark:bg-bg-dark fixed h-screen w-72 py-32 left-0 top-0 flex flex-col gap-5 items-center xl:flex-row xl:w-auto xl:justify-between xl:h-auto xl:p-0 xl:static"
+    <span class="hidden xl:flex items-center justify-between">
+      <a href="#home">
+        <img src="/assets/img/main-icon-64.png" alt="Gradient gear icon" />
+      </a>
+      <nav
+        class="text-content-light dark:text-content-dark flex gap-5"
+        :class="useRoute().fullPath.includes('/en') ? '!gap-10' : ''"
       >
-        <i
-          @click="isSidebarOpened = false"
-          class="pi pi-times text-4xl absolute right-1 top-1 dark:text-home-dark xl:!hidden"
-        ></i>
         <a
-          href="#home"
-          class="hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 xl:inline-block text-transparent bg-clip-text text-2xl font-bold outline-none"
+          v-for="nav in headerNav"
+          :href="nav.href"
+          class="text-2xl transition-colors ease-in-out hover:text-black dark:hover:text-white"
+          >{{ nav.section }}</a
         >
-          {{ $t("header.header-logo") }}
-        </a>
-        <nav
-          class="flex-col text-content-light dark:text-content-dark flex gap-5 xl:flex-row"
-          :class="useRoute().fullPath.includes('/en') ? '!gap-10' : ''"
-        >
-          <a
-            v-for="nav in headerNav"
-            :href="nav.href"
-            class="text-xl transition-colors ease-in-out hover:text-black dark:hover:text-white"
-            @click="isSidebarOpened = false"
-            >{{ nav.section }}</a
-          >
-        </nav>
-        <ul class="flex gap-5">
-          <li v-for="icon in socialMediaIcons">
-            <a :href="icon.href" target="_blank">
-              <i
-                :class="icon.socialMedia"
-                class="text-2xl text-content-light transition-colors ease-in-out hover:text-black dark:hover:text-white"
-              ></i>
-            </a>
-          </li>
-        </ul>
+      </nav>
+
+      <ul class="flex gap-x-4 items-center cursor-pointer">
+        <li v-for="lang in languages" @click="switchLang(lang.code)">
+          <i :class="lang.icon" class="rounded-sm text-xl pb-4"></i>
+        </li>
         <div
-          class="flex items-center gap-5 text-content-light dark:text-content-dark cursor-pointer"
+          class="group border transition-colors ease-in-out rounded py-1 px-2"
+          :class="
+            isDark
+              ? 'border-content-light hover:border-white'
+              : ' border-content-dark hover:border-black'
+          "
+          @click="themeColorSwitcher"
         >
-          <div
-            @click="isSwitcherOpened = !isSwitcherOpened"
-            class="flex items-center justify-between w-36 px-2 py-1 border rounded relative text-content-light dark:text-content-dark"
-          >
-            <p>
-              {{ lang }}
-            </p>
-            <i :class="icon" class="rounded-sm"></i>
-            <i
-              :class="
-                isSwitcherOpened
-                  ? 'pi pi-chevron-up text-xl'
-                  : 'pi pi-chevron-down text-xl'
-              "
-              class="hover:text-black dark:hover:text-white transition-colors ease-in-out"
-            ></i>
-          </div>
-          <div
-            class="bg-white dark:bg-bg-dark absolute top-20 border w-36 rounded opacity-0 invisible transition-opacity duration-300 text-content-light dark:text-content-dark"
-            :class="{ 'opacity-100 !visible': isSwitcherOpened }"
-          >
-            <p
-              v-for="lang in languages"
-              @click="switchLang(lang.code)"
-              class="flex justify-between hover:bg-home-dark dark:hover:bg-content-light dark:hover:text-white px-2 py-1 cursor-pointer"
-            >
-              {{ lang.lang }}
-              <i :class="lang.icon" class="rounded-md"></i>
-            </p>
-          </div>
-          <div class="border rounded py-1 px-2" @click="themeColorSwitcher">
-            <i
-              :class="
-                isDark
-                  ? 'pi pi-sun text-lg transition-colors ease-in-out hover:text-white'
-                  : 'pi pi-moon text-lg transition-colors ease-in-out hover:text-black'
-              "
-            ></i>
-          </div>
+          <i
+            class="transition-colors ease-in-out"
+            :class="
+              isDark
+                ? 'pi pi-sun text-lg text-content-dark group-hover:text-white'
+                : 'pi pi-moon text-lg text-content-light group-hover:text-black'
+            "
+          ></i>
         </div>
-      </div>
-    </div>
+      </ul>
+    </span>
 
-    <i
-      @click="isSidebarOpened = true"
-      class="pi pi-align-right text-4xl xl:!hidden dark:text-home-dark"
-    ></i>
+    <i @click="visible = true" class="pi pi-align-right text-4xl xl:hidden" />
   </header>
-
+  <SidebarMobileSidebar
+    :navigation-routes="headerNav"
+    :languages="languages"
+    :visible="visible"
+    :isDark="isDark"
+    @update="changeVisibility"
+    @switchTheme="themeColorSwitcher"
+    @switchLang="switchLang($event)"
+  />
   <slot />
   <footer class="px-5 xl:max-w-7xl mx-auto">
     <div
@@ -188,7 +149,6 @@ const languages = ref([
 ]);
 function switchLang(code) {
   setLocale(code);
-  isSwitcherOpened.value = false;
 }
 
 // Header nav
@@ -248,14 +208,8 @@ function themeColorSwitcher() {
 }
 
 // Sidebar switcher
-const isSidebarOpened = ref(false);
-
-onMounted(() => {
-  const selectedLang = languages.value.find(
-    (item) => item.code === locale.value
-  );
-  lang.value = selectedLang.lang;
-  icon.value = selectedLang.icon;
-  document.documentElement.setAttribute("lang", locale.value);
-});
+const visible = ref(false);
+function changeVisibility(value) {
+  visible.value = value;
+}
 </script>

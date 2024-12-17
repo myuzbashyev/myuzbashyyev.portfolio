@@ -1,5 +1,8 @@
 <template>
-  <section id="contact" class="h-screen flex items-center pt-28">
+  <section
+    id="contact"
+    class="section-container h-screen flex items-center pt-28"
+  >
     <h1
       class="text-4xl md:text-5xl xl:text-6xl text-center text-contact-heading dark:text-heading-dark font-bold"
       data-aos="fade"

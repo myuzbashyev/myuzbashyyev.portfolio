@@ -1,5 +1,8 @@
 <template>
-  <section id="techStack" class="pt-28 flex items-center md:h-screen md:p-0">
+  <section
+    id="techStack"
+    class="section-container pt-28 flex items-center md:h-screen"
+  >
     <div>
       <h1
         class="text-5xl text-heading-light dark:text-heading-dark font-bold mb-5"
@@ -46,6 +49,8 @@ const devIcons = ref([
   "devicon-npm-original-wordmark colored",
   "devicon-git-plain colored",
   "devicon-figma-plain colored",
+  "devicon-less-plain-wordmark colored",
+  "devicon-graphql-plain colored",
 ]);
 const isDark = useIsDark();
 </script>

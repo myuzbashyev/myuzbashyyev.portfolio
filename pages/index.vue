@@ -1,23 +1,21 @@
 <template>
   <!-- Header -->
   <nuxt-layout>
-    <main class="max-w-3xl px-5 mx-auto md:max-w-7xl 2xl:px-0">
+    <main class="container mx-auto">
       <!-- Home Section -->
-      <home />
+      <SectionsHome />
       <!-- About section -->
-      <about />
+      <SectionsAbout />
       <!-- Tech Stack Section -->
-      <techStack />
+      <SectionsStack />
       <!-- Projects Section -->
-      <projects />
+      <SectionsProjects />
       <!-- Contact Section -->
-      <contact />
+      <SectionsContact />
     </main>
     <!-- Footer -->
   </nuxt-layout>
 </template>
-
-<script setup></script>
 
 <style>
 html {
