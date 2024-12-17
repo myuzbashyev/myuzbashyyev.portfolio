@@ -53,7 +53,7 @@
 
     <template #closeicon>
       <i
-        class="pi pi-times text-xl"
+        class="pi pi-times !text-xl"
         :class="isDark ? 'text-content-dark' : 'text-content-light'"
       ></i>
     </template>

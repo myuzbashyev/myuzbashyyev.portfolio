@@ -43,7 +43,7 @@
       </ul>
     </span>
 
-    <i @click="visible = true" class="pi pi-align-right text-4xl xl:!hidden" />
+    <i @click="visible = true" class="pi pi-align-right !text-4xl xl:!hidden" />
   </header>
   <SidebarMobileSidebar
     :navigation-routes="headerNav"
