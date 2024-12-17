@@ -43,9 +43,9 @@ export default {
     paragraph: "Şu wagta çenli guran proýektlarym",
     cards: {
       card_1:
-        "Kerim Hally şahyryň goşgularyny görkezýän häzirki zamanyň web saýty işlenip düzüldi. Proekt döretmek üçin täze tehnologiýalar: Vue.js, TailwindCSS we Vuex ulanyldy. Interaktiw elementler we dinamik täsirler okyjylaryň şygyrlaryň dünýäsine gyzykly batyp gitmegini üpjün edýär.",
+        "Kerim Hally şahyryň goşgularyny görkezýän häzirki zamanyň web saýty işlenip düzüldi. Proekt döretmek üçin täze tehnologiýalar: Vue.js, TailwindCSS we Vuex ulanyldy. Interaktiw elementler we dinamik täsirler okyjylaryň şygyrlaryň dünýäsine gyzykly batyp gitmegini üpjün edýär.",
       card_2:
-        "Телеwizion ýaýlymyny dolandyrmak üçin häzirki zaman web platformasy, Vue.js arhitekturasynda gurlup, ýagdaýy Vuex bilen dolandyrylýar. CSS dürli enjamlarda ulanyşyň amatlylygyny üpjün edýän, stilli we reaksiýa görkezýän interfeýsi üpjün edýär.",
+        "Теlеýaýlymlary dolandyrmak üçin häzirki zaman web platformasy, Vue.js arhitekturasynda gurlup, ýagdaýy Vuex bilen dolandyrylýar. CSS dürli enjamlarda ulanyşyň amatlylygyny üpjün edýän, stilli we reaksiýa görkezýän interfeýsi üpjün edýär.",
       card_3:
         "Tagam söýüjiler üçin HTML, CSS we JavaScript arkaly döredilen interaktiw web-programma. Täze reseptleri aňsatlyk bilen tapyp, öz aşhana kitabyňy dörediň.",
       card_4:
