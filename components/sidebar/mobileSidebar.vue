@@ -43,8 +43,8 @@
             class="transition-colors ease-in-out"
             :class="
               isDark
-                ? 'pi pi-sun text-lg text-content-dark'
-                : 'pi pi-moon text-lg text-content-light'
+                ? 'pi pi-sun size-5 text-content-dark'
+                : 'pi pi-moon size-5 text-content-light'
             "
           ></i>
         </li>
